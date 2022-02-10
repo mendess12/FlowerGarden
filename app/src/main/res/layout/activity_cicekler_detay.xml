@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CiceklerDetay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/detayResim"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/gul"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/detayAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çicek Adı"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/baslik"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/detayAciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çiçek Açıklama"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
